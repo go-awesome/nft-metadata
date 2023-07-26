@@ -7,4 +7,8 @@ services:
       - "3000:3000"
     volumes:
       - .:/app
+    environment:
+      - AWS_ACCESS_KEY_ID=xxx
+      - AWS_SECRET_ACCESS_KEY=yyy
+      - AWS_SESSION_TOKEN=zzz
     command: go run main.go
